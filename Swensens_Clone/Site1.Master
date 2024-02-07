@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Swensens_Clone.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <%---boorstrap css---%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%---fontawesome css---%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <%---Our Custom css---%>
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
+    <%---Jquery---%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%---popper js---%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%---bootstrap js---%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="Imgs/logo2.png" width="103" height="26" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse site-header position-absolute end-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Order</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active header-button">
+                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server">
+                                <button type="button" class="btn btn-white btn-lg border-danger text-danger bg-white">สมัครสมาชิก</button>
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active header-button">
+                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server">
+                                <button type="button" class="btn btn-danger btn-lg text-white">เข้าสู่ระบบ</button>
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-white dropdown-toggle background-color:#FFFFFF" data-bs-toggle="dropdown" aria-expanded="false">
+                                TH
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-white">
+                                <li><a class="dropdown-item" href="#">TH</a></li>
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+        <!--- Main Content Placeholder --->
+        <div>
+            <asp:ContentPlaceHolder ID="ContenPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--- Main Content Placeholder --->
+
+
+        <!---footer--->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="primary-footer">
+                            <a class="footer-logo me-2" href="#">
+                                <img src="Imgs/whitelogofooter.jpg" height="41" width="165"/>
+                            </a>
+                        <div class="footer-menu position-absolute end-0">
+                            <asp:LinkButton class="footerlinks" ID="LinkButton3" runat="server">
+                                ไอศกรีมของเรา
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton4" runat="server">
+                                สิทธิพิเศษ
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server">
+                                รีวอร์ด
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">
+                                คูปองของฉัน
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton7" runat="server">
+                                บัตรของขวัญ
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">
+                                บัตรสเวนเซ่นส์การ์ด
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">
+                                ข้อมูลของฉัน
+                            </asp:LinkButton>
+                            &nbsp;
+                         </div>
+                       </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="secondary-footer">
+                            <div class="social-icon">
+                                <a class="fb-icon social-icon-space" href="#">
+                                    <img src="Imgs/icon-facebook.png" />
+                                </a>
+                                <a class="ig-icon social-icon-space" href="#">
+                                    <img src="Imgs/icon-instagram.png" />
+                                </a>
+                                <a class="yt-icon social-icon-space" href="#">
+                                    <img src="Imgs/icon-youtube.png" />
+                                </a>
+                            </div>
+                        <div class="secondary-menu position-absolute end-0">
+                            <asp:LinkButton class="footerlinks-secondary" ID="LinkButton10" runat="server">
+                                คำถามที่พบบ่อย
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks-secondary" ID="LinkButton11" runat="server">
+                                ข้อกำหนดการใช้งาน
+                            </asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks-secondary" ID="LinkButton12" runat="server">
+                                นโยบายความเป็นส่วนตัว
+                            </asp:LinkButton>
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---footer--->
+
+    </form>
+</body>
+</html>
