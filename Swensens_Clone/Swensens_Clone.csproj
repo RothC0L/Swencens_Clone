@@ -2145,6 +2145,7 @@
     <Content Include="fontawesome\svgs\solid\yen-sign.svg" />
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
+    <Content Include="Imgs\card-head.png" />
     <Content Include="Homepage.aspx" />
     <Content Include="Imgs\app-store.png" />
     <Content Include="Imgs\banner-image.png" />
@@ -2170,6 +2171,7 @@
     <Content Include="Imgs\whitelogo.jpg" />
     <Content Include="Imgs\whitelogofooter.jpg" />
     <Content Include="UserLogin.aspx" />
+    <Content Include="UserSignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -2195,6 +2197,13 @@
     </Compile>
     <Compile Include="UserLogin.aspx.designer.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSignUp.aspx.cs">
+      <DependentUpon>UserSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSignUp.aspx.designer.cs">
+      <DependentUpon>UserSignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
