@@ -52,7 +52,6 @@
     vertical-align:top;
     box-sizing:border-box;
     position:absolute;
-    top:185px;
 }
 
 .footer-logo{
@@ -156,12 +155,14 @@
     font-size:50px;
     line-height:1.25;
     text-transform:uppercase;
+    font-family:kanit_medium2,sans-serif;
 }
 
 .content{
     font-size:20px;
     line-height:1.2;
     margin-top:24px;
+    font-family:kanit_light2,sans-serif;
 }
 
 .delivery-row{
@@ -176,10 +177,6 @@
 .delivery-row::before,.delivery-row::after{
     display:table;
     content:"";
-}
-
-.action{
-    margin-top:48px;
 }
 
 .image-btn-th{

@@ -94,9 +94,9 @@
         <footer>
             <div id="footer1" class="container-fluid">
                 <div class="row">
-                    <div class="primary-footer">
+                    <div class="primary-footer col-xs-12 col-sm-12 col-md-12">
                             <a class="footer-logo me-2" href="#">
-                                <img src="Imgs/whitelogofooter.jpg" height="41" width="165"/>
+                                <img src="Imgs/whitelogofooter.jpg" class="img-fluid" height="41" width="165"/>
                             </a>
                         <div class="footer-menu position-absolute end-0">
                             <asp:LinkButton class="footerlinks" ID="LinkButton3" runat="server">
@@ -133,7 +133,7 @@
             </div>
             <div id="footer2" class="container-fluid">
                 <div class="row">
-                    <div class="secondary-footer">
+                    <div class="secondary-footer col-xs-12 col-sm-12 col-md-12">
                             <div class="social-icon">
                                 <a class="fb-icon social-icon-space" href="#">
                                     <img src="Imgs/icon-facebook.png" />
@@ -145,7 +145,7 @@
                                     <img src="Imgs/icon-youtube.png" />
                                 </a>
                             </div>
-                        <div class="secondary-menu position-absolute end-0">
+                        <div class="second-menu position-absolute end-0 ">
                             <asp:LinkButton class="footerlinks-secondary" ID="LinkButton10" runat="server">
                                 คำถามที่พบบ่อย
                             </asp:LinkButton>
