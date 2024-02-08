@@ -55,6 +55,16 @@
                                 <button type="button" class="btn btn-danger btn-lg text-white">เข้าสู่ระบบ</button>
                             </asp:LinkButton>
                         </li>
+                        <li class="nav-item active header-button">
+                            <asp:LinkButton class="nav-link" ID="LinkButton13" runat="server" OnClick="LinkButton1_Click">
+        <button type="button" class="btn btn-white btn-lg border-danger text-danger bg-white">Hello User</button>
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active header-button">
+                            <asp:LinkButton class="nav-link" ID="LinkButton14" runat="server" OnClick="LinkButton14_Click">
+        <button type="button" class="btn btn-danger btn-lg text-white">ออกจากระบบ</button>
+                            </asp:LinkButton>
+                        </li>
                     </ul>
 
                     <ul class="navbar-nav">

@@ -40,7 +40,7 @@
                                         </asp:TextBox>
                                     </div>
                                     <div class="form-group">
-                                        <asp:Button class="btn btn-danger btn-block btn-login btn-lg" ID="Button1" runat="server" Text="เข้าสู่ระบบ" />
+                                        <asp:Button class="btn btn-danger btn-block btn-login btn-lg" ID="Button1" runat="server" Text="เข้าสู่ระบบ" OnClick="Button1_Click" />
                                     </div>
                                 </div>
                             </div>
